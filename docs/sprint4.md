@@ -51,12 +51,12 @@ Before this sprint, you should:
   function config(   $routeProvider,  $locationProvider   ) {
     $routeProvider
       .when('/', {
-        template: 'This template will show the homepage, with all ablums!',
+        templateUrl: 'This template will show the homepage, with all ablums!',
         controllerAs: 'albumsIndexCtrl',
         controller: 'AlbumsIndexController'
       })
       .when('/albums/:id', {
-        template: 'This template will show an album!',
+        templateUrl: 'This template will show an album!',
         controllerAs: 'albumsShowCtrl',
         controller: 'AlbumsShowController'
       });
@@ -82,7 +82,7 @@ Most of our page content will move to HTML into files inside a `templates` folde
 
     ```js
     .when('/', {
-        templateUrl: '/templates/albums',
+        templateUrl: '/templates/albums.html',
         controllerAs: 'albumsIndexCtrl',
         controller: 'AlbumsIndexController'
       })
@@ -135,12 +135,12 @@ Most of our page content will move to HTML into files inside a `templates` folde
   function config ($routeProvider, $locationProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: '/templates/albums',
+        templateUrl: '/templates/albums.html',
         controllerAs: 'albumsIndexCtrl',
         controller: 'AlbumsIndexController'
       })
       .when('/albums/:id', {
-        templateUrl: '/templates/albums-show',
+        templateUrl: '/templates/albums-show.html',
         controllerAs: 'albumsShowCtrl',
         controller: 'AlbumsShowController'
       })
