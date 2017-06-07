@@ -171,7 +171,7 @@ Most of our page content will move to HTML into files inside a `templates` folde
 
 6. In `AlbumsShowController.js`, we need to `GET` the data for one album. To do that, we need to grab the `_id` of that data object that we're interested in from the URL.
 
-Angular provides us with a component called `$routeParams` that allows us access the URL path's parameters. To use `$routeParams`, we  `$inject` it in the controller. After it's injected, the parameters from the URL are aailable inside the `$routeParams`  object.
+Angular provides us with a component called `$routeParams` that allows us access the URL path's parameters. To use `$routeParams`, we  `$inject` it in the controller. After it's injected, the parameters from the URL are available inside the `$routeParams`  object.
 
   ```js
   AlbumsShowController.$inject = ['$http', '$routeParams'];
